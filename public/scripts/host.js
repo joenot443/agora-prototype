@@ -34,10 +34,9 @@ window.onload = () => {
 
   const userConnected = peerId => {
     navigator.getUserMedia(
-      { video: true },
+      { video: true, audio: true },
       function(stream) {
         var call = peer.call(peerId, stream);
-        console.info(stream);
         call.on("stream", function(remoteStream) {
           console.info(remoteStream);
           // Show stream in some video/canvas element.
