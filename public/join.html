@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Join a Lecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <script src="./scripts/join.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.16/peer.min.js"></script>
+  </head>
+  <body>
+    <body>
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Let's join an Agora lecture</h1>
+          <h2 class="subtitle">Enter your host's ID and click connect.</h2>
+          <div class="field has-addons">
+            <div class="control">
+              <input
+                id="hostInput"
+                class="input"
+                type="text"
+                placeholder="Host ID"
+              />
+            </div>
+            <div class="control">
+              <a id="joinButton" class="button is-info"> Connect </a>
+            </div>
+          </div>
+          <video id="video"></video>
+        </div>
+      </section>
+    </body>
+  </body>
+</html>
